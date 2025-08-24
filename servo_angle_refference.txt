@@ -1,0 +1,184 @@
+
+void initial() {
+  
+  pwm.setPWM(0, 0, angleToPulse(90) );
+  pwm.setPWM(1, 0, angleToPulse(90) );   
+  pwm.setPWM(2, 0, angleToPulse(90) );   
+  pwm.setPWM(3, 0, angleToPulse(90) );   
+  pwm.setPWM(4, 0, angleToPulse(90) );
+  pwm.setPWM(5, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );   
+  pwm.setPWM(7, 0, angleToPulse(90) );   
+  pwm.setPWM(8, 0, angleToPulse(90) );   
+  pwm.setPWM(9, 0, angleToPulse(90) );
+ // pwm.setPWM(10, 0, angleToPulse(90) );
+  pwm.setPWM(11, 0, angleToPulse(90) );   
+  pwm.setPWM(13, 0, angleToPulse(90) );   
+
+ 
+}
+
+void hi() {
+
+  pwm.setPWM(4, 0, angleToPulse(140) );
+  pwm.setPWM(5, 0, angleToPulse(60) );
+  pwm.setPWM(6, 0, angleToPulse(90) );   
+  pwm.setPWM(7, 0, angleToPulse(40) );   
+  pwm.setPWM(8, 0, angleToPulse(120) );   
+  pwm.setPWM(9, 0, angleToPulse(90) );
+  
+ // pwm.setPWM(0, 0, angleToPulse() );
+  pwm.setPWM(1, 0, angleToPulse(90) ); 
+  
+  pwm.setPWM(2, 0, angleToPulse(20) );
+  delay(1000);
+  pwm.setPWM(3, 0, angleToPulse(0) );  
+  delay(500);
+  pwm.setPWM(3, 0, angleToPulse(60) );
+  delay(500);
+  pwm.setPWM(3, 0, angleToPulse(0) );  
+  delay(500);
+  pwm.setPWM(3, 0, angleToPulse(60) );
+  delay(500);
+  pwm.setPWM(3, 0, angleToPulse(0) );  
+  delay(500);
+  pwm.setPWM(3, 0, angleToPulse(60) );
+
+
+
+ 
+}
+
+void sit() {
+  
+  pwm.setPWM(4, 0, angleToPulse(140) );
+  pwm.setPWM(5, 0, angleToPulse(60) );
+  pwm.setPWM(6, 0, angleToPulse(90) );   
+  pwm.setPWM(7, 0, angleToPulse(40) );   
+  pwm.setPWM(8, 0, angleToPulse(120) );   
+  pwm.setPWM(9, 0, angleToPulse(90) );
+
+}
+
+void tail() {
+
+  initial();
+  pwm.setPWM(10, 0, angleToPulse(60) );
+  delay(500);
+  pwm.setPWM(10, 0, angleToPulse(120) );
+  delay(500);
+
+
+}
+void fwdwalk() {
+
+  pwm.setPWM(0, 0, angleToPulse(90) );
+  pwm.setPWM(2, 0, angleToPulse(90) );     
+  pwm.setPWM(5, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );
+  pwm.setPWM(8, 0, angleToPulse(90) );
+  pwm.setPWM(9, 0, angleToPulse(90) );     
+     
+  
+  pwm.setPWM(3, 0, angleToPulse(120) );
+  pwm.setPWM(4, 0, angleToPulse(60) );
+ // pwm.setPWM(6, 0, angleToPulse(60) );
+  delay(500);
+
+  pwm.setPWM(3, 0, angleToPulse(90) );
+  pwm.setPWM(4, 0, angleToPulse(90) );
+
+  
+
+  pwm.setPWM(1, 0, angleToPulse(60) );
+  pwm.setPWM(7, 0, angleToPulse(120) );
+
+  delay(500);
+
+  pwm.setPWM(1, 0, angleToPulse(90) );
+  pwm.setPWM(7, 0, angleToPulse(90) );
+
+
+
+  
+}
+
+void bwdwalk() {
+  
+  pwm.setPWM(3, 0, angleToPulse(60) );
+  pwm.setPWM(9, 0, angleToPulse(60) );
+
+  delay(1000);
+
+  pwm.setPWM(3, 0, angleToPulse(90) );
+  pwm.setPWM(9, 0, angleToPulse(90) );
+  delay(1000);
+
+
+  pwm.setPWM(1, 0, angleToPulse(120) );
+  pwm.setPWM(6, 0, angleToPulse(120) );
+  delay(1000);
+
+  pwm.setPWM(1, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );
+
+  
+  
+  delay(1000);
+
+  pwm.setPWM(3, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );
+
+  pwm.setPWM(1, 0, angleToPulse(60) );
+  pwm.setPWM(9, 0, angleToPulse(120) );
+
+  delay(1000);
+
+  pwm.setPWM(1, 0, angleToPulse(90) );
+  pwm.setPWM(9, 0, angleToPulse(90) );
+
+}
+
+void rwdwalk() {
+  
+  pwm.setPWM(3, 0, angleToPulse(120) );
+  pwm.setPWM(9, 0, angleToPulse(120) );
+
+  delay(1000);
+
+  pwm.setPWM(3, 0, angleToPulse(90) );
+  pwm.setPWM(9, 0, angleToPulse(90) );
+
+
+  pwm.setPWM(1, 0, angleToPulse(120) );
+  pwm.setPWM(6, 0, angleToPulse(120) );
+  delay(1000);
+
+  pwm.setPWM(1, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );
+
+  
+}
+
+void lwdwalk() {
+  
+  pwm.setPWM(3, 0, angleToPulse(60) );
+  pwm.setPWM(9, 0, angleToPulse(60) );
+
+  delay(1000);
+
+  pwm.setPWM(3, 0, angleToPulse(90) );
+  pwm.setPWM(9, 0, angleToPulse(90) );
+  delay(1000);
+
+  pwm.setPWM(1, 0, angleToPulse(60) );
+  pwm.setPWM(6, 0, angleToPulse(60) );
+  delay(1000);
+
+  pwm.setPWM(1, 0, angleToPulse(90) );
+  pwm.setPWM(6, 0, angleToPulse(90) );
+
+
+
+  
+}... this is arduino code i want use this and make changes 
